@@ -1,6 +1,7 @@
 import java.io.File;
 import java.io.FileWriter;
 import java.io.PrintWriter;
+import java.util.ArrayList;
 import java.awt.Graphics;
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -138,6 +139,21 @@ class SlotsDrawing extends JPanel {
 		g.setColor(Color.getColor(tileInfo.getTileRightColor().toUpperCase(), Color.RED)); // Test
 		g.fillRect(650, 120, 130, 115);
 	}
+
+	public void setTiles(ArrayList<Tiles> tileRead) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void RandomizerTile() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public ArrayList<Tiles> getTiles() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 }
 
 class TileWriter {
@@ -175,7 +191,7 @@ class SlotsFrame extends JFrame {
 		JMenuItem helpAbout = new JMenuItem("About");
 		helpAbout.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				JOptionPane.showMessageDialog(null, "Slot Machine Program made by Will Nash");
+				JOptionPane.showMessageDialog(null, "Slot Machine Program made by Jaylen Bush");
 			}
 		});
 		slotHelp.add(helpAbout);
